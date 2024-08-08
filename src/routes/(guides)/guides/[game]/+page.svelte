@@ -3,8 +3,8 @@
   const { route, game, links, path, html, attributes } = data
 
   import '../../../assets/[resource].css/_pokemon.css'
-  import 'pokemon-assets/assets/css/items.css'
-  import 'pokemon-assets/assets/css/symbols.css'
+  import '../../../assets/css/items.css'
+  import '../../../assets/css/symbols.css'
   import { setContext } from 'svelte'
 
   import { Hero, Links, Summary, Bosses, Aside } from '$c/Guide'

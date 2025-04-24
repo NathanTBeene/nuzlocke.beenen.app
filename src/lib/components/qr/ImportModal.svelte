@@ -81,24 +81,9 @@
 
   {#if !loading}
     <p>
-      Enter the <b>Share</b> code, scan the, <b>QR code</b> or upload a
+      Scan the <b>QR code</b> or upload a
       <b>.nzsav</b> file to transfer save data.
     </p>
-
-    <div
-      class="-ml-4 inline-flex scale-75 transform items-center text-4xl md:my-0 md:scale-100"
-    >
-      <Icon inline={true} height="0.9em" icon={Mobile} class="fill-current" />
-      <Icon
-        inline={true}
-        height="0.6em"
-        icon={Transfer}
-        class="mr-2 ml-1 fill-current"
-      />
-      <Icon inline={true} icon={Desktop} class="fill-current" />
-    </div>
-
-    <TextCode on:code={handlescan} />
 
     <ol>
       <li>
@@ -119,7 +104,7 @@
         > on the save to transfer
       </li>
       <li>
-        Enter the <mark>Code</mark> or scan the
+        Scan the
         <mark
           >QR code <Icon
             inline={true}

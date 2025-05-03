@@ -206,10 +206,11 @@
   let statusComplete = false
   const handleStatus = (sid) => () => {
     const cb = (data) => {
-      if (NuzlockeGroups.Unavailable.includes(status?.id)) handleTeamRemove()
       if (NuzlockeGroups.Dead.includes(status?.id)) death = data
-
+      
       status = NuzlockeStates[sid]
+      if (NuzlockeGroups.Unavailable.includes(status?.id)) handleTeamRemove()
+      
       _animateStatus(sid)
     }
 

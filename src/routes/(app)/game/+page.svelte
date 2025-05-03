@@ -132,8 +132,6 @@
   }
 </script>
 
-<SupportBanner />
-
 {#await setup()}
   <Loader />
 {:then route}

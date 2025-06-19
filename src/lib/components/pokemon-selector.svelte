@@ -133,23 +133,27 @@
 
   $: {
     const topatch = nonnull({
-      id,
-      pokemon: selected?.alias,
-      status: status?.id,
-      nature: nature?.id,
-      location: locationName || location,
-      ...(nickname ? { nickname } : {}),
-      ...(hidden ? { hidden: true } : {}),
-      ...(status?.id === 5 && death ? { death } : {})
-    })
+    id,
+    pokemon: selected?.alias,
+    status: status?.id,
+    nature: nature?.id,
+    location: locationName || location,
+    ...(nickname ? { nickname } : {}),
+    ...(hidden ? { hidden: true } : {}),
+    ...(status?.id === 5 && death ? { death } : {})
+  });
 
-    if (selected && !oEqual(topatch, resetd)) {
-      console.log('Patching', location)
-      store.update(patch({ [location]: topatch }))
+  if (selected && !oEqual(topatch, resetd)) {
+    console.log('Patching', location);
+    store.update(patch({ [location]: topatch }));
+
+    // Remove from team if marked as dead
+    if (status?.id === 5 && (team || []).includes(location)) {
+      store.update(patch({ __team: team.filter((loc) => loc !== location) }));
     }
+  }
 
-    // TODO: Handle death state team clearin
-    inteam = (team || []).includes(location)
+  inteam = (team || []).includes(location);
   }
 
   const onhide = () => {
@@ -206,11 +210,10 @@
   let statusComplete = false
   const handleStatus = (sid) => () => {
     const cb = (data) => {
-      if (NuzlockeGroups.Dead.includes(status?.id)) death = data
-      
-      status = NuzlockeStates[sid]
       if (NuzlockeGroups.Unavailable.includes(status?.id)) handleTeamRemove()
-      
+      if (NuzlockeGroups.Dead.includes(status?.id)) death = data
+
+      status = NuzlockeStates[sid]
       _animateStatus(sid)
     }
 

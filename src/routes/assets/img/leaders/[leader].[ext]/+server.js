@@ -20,7 +20,11 @@ export async function GET({ params }) {
 
 
 
-  if (!buffer) return new Response('', { stauts: 404 })
+  if (!buffer) {
+    const spritesPath = `./node_modules/pokemon-sprites/sprites/pokemon`;
+    const spriteName = `201-question.png`;
+    buffer = fs.readFileSync(`${spritesPath}/${spriteName}`);
+  }
 
   return new Response(buffer);
 }

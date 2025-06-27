@@ -13,7 +13,6 @@
 /leaders/blazevolt-wattson
 /leaders/blazevolt-winona
 /leaders/blwh-charles
-/leaders/blwh-colress
 /leaders/blwh-elesa-2
 /leaders/blwh-ghetsis-2
 /leaders/blwh-iris-champion
@@ -24,7 +23,6 @@
 /leaders/blwh-shadow
 /leaders/blwh-zinzolin
 /leaders/blwh-zinzolin-grunt
-
 /leaders/dp-cheryl
 /leaders/dp-dahlia
 /leaders/dp-darach
@@ -35,13 +33,11 @@
 /leaders/dp-mars-jupiter
 /leaders/dp-mira
 /leaders/dp-riley
-
 /leaders/gs-ariana
 /leaders/gs-elderli
 /leaders/gs-eusine
 /leaders/gs-kimono
 /leaders/gs-proton
-
 /leaders/rs-grunts
 /leaders/rs-maxie-courtney
 /leaders/rs-tabitha-courtney

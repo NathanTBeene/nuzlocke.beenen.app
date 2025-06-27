@@ -2149,6 +2149,10 @@ pokedex-promise-v2@^3.3.2:
     memory-cache "^0.2.0"
     p-map "^4.0.0"
 
+"pokemon-sprites@github:PokeAPI/sprites":
+  version "1.0.0"
+  resolved "https://codeload.github.com/PokeAPI/sprites/tar.gz/e6dcd22b736eb2e73cb3e9fd85c23022bf595691"
+
 postcss-calc@^8.2.3:
   version "8.2.4"
   resolved "https://registry.yarnpkg.com/postcss-calc/-/postcss-calc-8.2.4.tgz#77b9c29bfcbe8a07ff6693dc87050828889739a5"

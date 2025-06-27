@@ -68,6 +68,15 @@
 
       img = typeof data.img === 'string' ? { src: data.img } : data.img
 
+      if(img.src.startsWith('/leaders/')) {
+        img.src = `/assets/img${img.src}`;
+      }
+      if(img.src.startsWith('/sprite/')) {
+        img.src = `/assets/img/pokemon/base-${img.src.slice(8)}`;
+      }
+
+      console.log(img.src);
+
       pokemon = data.pokemon
       name = data.name
       speciality = data.speciality
@@ -130,7 +139,7 @@
       {#if img}
         <span class="relative -mx-5" class:grayscale={defeated}>
           <Picture
-            src="https://img.nuzlocke.app/{img.src}"
+            src="{img.src}"
             alt={name}
             pixelated
             className="w-18 md:w-36"

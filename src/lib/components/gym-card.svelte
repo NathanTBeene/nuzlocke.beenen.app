@@ -66,16 +66,17 @@
       const league = await getLeague(game, starter)
       const data = league[id]
 
-      img = typeof data.img === 'string' ? { src: data.img } : data.img
+      if(typeof data.img !== 'undefined') {
+        img = typeof data.img === 'string' ? { src: data.img } : data.img
 
-      if(img.src.startsWith('/leaders/')) {
-        img.src = `/assets/img${img.src}`;
-      }
-      if(img.src.startsWith('/sprite/')) {
-        img.src = `/assets/img/pokemon/base-${img.src.slice(8)}`;
+        if(img.src.startsWith('/leaders/')) {
+          img.src = `/assets/img${img.src}`;
+        }
+        if(img.src.startsWith('/sprite/')) {
+          img.src = `/assets/img/pokemon/base-${img.src.slice(8)}`;
+        }
       }
 
-      console.log(img.src);
 
       pokemon = data.pokemon
       name = data.name

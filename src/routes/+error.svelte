@@ -2,7 +2,7 @@
   import { page } from '$app/stores'
 
   export let text = '#3294ee',
-    img = 'https://img.nuzlocke.app/sprite/202.png'
+    img = '/assets/img/pokemon/base-202.png'
 </script>
 
 <svelte:head>

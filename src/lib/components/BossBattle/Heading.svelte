@@ -1,9 +1,8 @@
 <script>
   import { FormalInvitation as Pattern } from '$lib/utils/pattern'
+  import { bossToImage } from '$lib/utils/rewrites.js'
   import { Wrapper as SettingWrapper } from '$lib/components/Settings'
   import { color } from '$lib/data/colors.ts'
-
-  import { IMG } from '$lib/utils/rewrites'
 
   export let atkType = null,
     boss = null
@@ -20,15 +19,14 @@
 
   const center = 50
 
-  let src
-  $: src = boss?.img?.src ?? boss?.img
+  let img = bossToImage(boss);
 </script>
 
 {#if boss?.img}
   <img
     alt='Boss image for {boss.name}'
     class="absolute right-4 -top-5 -z-10 scale-150 md:-top-7 md:right-8 md:scale-200"
-    src="{IMG}{src}.png"
+    src="{img.src}.png"
   />
 {/if}
 

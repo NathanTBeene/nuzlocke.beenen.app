@@ -23,7 +23,7 @@
     info
 
   import { browser } from '$app/environment'
-  import { onMount, getContext } from 'svelte'
+  import { getContext } from 'svelte'
   import { fade } from 'svelte/transition'
 
   import Pokemon from '$lib/components/pokemon-card.svelte'
@@ -38,6 +38,7 @@
 
   import { Loop as Badge, Ball, Info } from '$icons'
   import { Vs } from '$lib/components/BossBattle'
+  import { bossToImage } from '$utils/rewrites'
 
   import Effect from '$lib/components/Effect.svelte'
 
@@ -66,17 +67,7 @@
       const league = await getLeague(game, starter)
       const data = league[id]
 
-      if(typeof data.img !== 'undefined') {
-        img = typeof data.img === 'string' ? { src: data.img } : data.img
-
-        if(img.src.startsWith('/leaders/')) {
-          img.src = `/assets/img${img.src}`;
-        }
-        if(img.src.startsWith('/sprite/')) {
-          img.src = `/assets/img/pokemon/base-${img.src.slice(8)}`;
-        }
-      }
-
+      img = bossToImage(data);
 
       pokemon = data.pokemon
       name = data.name

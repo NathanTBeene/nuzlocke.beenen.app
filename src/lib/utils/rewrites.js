@@ -34,3 +34,18 @@ export const createImgUrl = (p, { ext = 'webp', shiny = false } = {}) => {
   if (shiny) return `${SPRITE}/shiny-${normalId}.${ext}`
   return `${SPRITE}/base-${normalId}.${ext}`
 }
+
+export const bossToImage = (bossData) => {
+  let img = { src: '' };
+  if(typeof bossData.img !== 'undefined') {
+    img = typeof bossData.img === 'string' ? { src: bossData.img } : bossData.img
+
+    if(img.src.startsWith('/leaders/')) {
+      img.src = `/assets/img${img.src}`;
+    }
+    if(img.src.startsWith('/sprite/')) {
+      img.src = `/assets/img/pokemon/base-${img.src.slice(8)}`;
+    }
+  }
+  return img;
+}

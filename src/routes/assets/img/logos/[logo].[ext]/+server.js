@@ -1,20 +1,19 @@
 import { Expanded as Games } from '$lib/data/games.js'
 import fs from 'fs'
 
-const spritesPath = `./src/routes/assets/img/logo`;
+const spritesPath = `./src/routes/assets/img/logos`;
 
 export async function GET({ params }) {
   const { logo, ext } = params;
 
+
   if (!['png', 'webp'].includes(ext)) return new Response('', { stauts: 404 })
 
   const [id, res] = logo.split('@')
-  const logoPath = Games?.[id]?.logo;
-  if (!logoPath) return new Response('', { status: 404 });
 
   const location = res
-    ? `${logoPath}@${res}.${ext}`
-    : `${logoPath}.${ext}`
+    ? `${id}@${res}.${ext}`
+    : `${id}.${ext}`
 
   let buffer = null;
 

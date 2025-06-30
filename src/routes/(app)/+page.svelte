@@ -102,7 +102,7 @@
               >
                 <Logo
                   loading="eager"
-                  src="{IMG}{Games[active.game].logo}"
+                  logo="{Games[active.game].logo}"
                   alt="{active.game} logo"
                   pictureClass="game--{active.game}"
                   class="ml-2 inline"

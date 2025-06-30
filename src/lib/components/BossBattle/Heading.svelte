@@ -25,7 +25,6 @@
 </script>
 
 {#if boss?.img}
-  <!-- <img class="absolute -top-8 left-8 -z-10 scale-y-150 -scale-x-150" src="/leaders/masters/trainer/red.png" /> -->
   <img
     alt='Boss image for {boss.name}'
     class="absolute right-4 -top-5 -z-10 scale-150 md:-top-7 md:right-8 md:scale-200"

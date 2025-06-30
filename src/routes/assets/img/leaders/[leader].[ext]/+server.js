@@ -8,13 +8,10 @@ export async function GET({ params }) {
   const {leader, ext} = params;
 
   let buffer = null;
-  console.log(`${spritesPath}/${leader}.png`)
 
   if(fs.existsSync(`${spritesPath}/${leader}.webp`)) {
-    console.log(`exists ${spritesPath}/${leader}.webp`)
     buffer = fs.readFileSync(`${spritesPath}/${leader}.webp`)
   } else if(fs.existsSync(`${spritesPath}/${leader}.png`)) {
-    console.log(`exists ${spritesPath}/${leader}.png`)
     buffer = fs.readFileSync(`${spritesPath}/${leader}.png`)
   }
 

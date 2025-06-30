@@ -36,7 +36,7 @@ export const createImgUrl = (p, { ext = 'webp', shiny = false } = {}) => {
 }
 
 export const bossToImage = (bossData) => {
-  let img = { src: '' };
+  let img = null;
   if(typeof bossData.img !== 'undefined') {
     img = typeof bossData.img === 'string' ? { src: bossData.img } : bossData.img
 

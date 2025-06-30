@@ -86556,8 +86556,8 @@
       "speciality": "",
       "img": {
         "src": "/leaders/sm-kukui",
-        "author": "Kyledove",
-        "link": "https://www.deviantart.com/kyle-dove"
+        "author": "Beliot419",
+        "link": "https://www.deviantart.com/beliot419"
       },
       "pokemon": [
         {
@@ -92922,8 +92922,8 @@
       "speciality": "grass",
       "img": {
         "src": "/leaders/swsh-milo",
-        "author": "Drawnamu",
-        "link": "https://www.deviantart.com/drawnamu"
+        "author": "Brumirage",
+        "link": "https://www.instagram.com/brumirage"
       },
       "pokemon": [
         {
@@ -94373,8 +94373,8 @@
       "speciality": "",
       "img": {
         "src": "/leaders/swsh-mustard2",
-        "author": "Drawnamu",
-        "link": "https://www.deviantart.com/drawnamu"
+        "author": "Brumirage",
+        "link": "https://www.instagram.com/brumirage"
       },
       "pokemon": [
         {
@@ -94485,8 +94485,8 @@
       "speciality": "poison",
       "img": {
         "src": "/leaders/swsh-klara",
-        "author": "Drawnamu",
-        "link": "https://www.deviantart.com/drawnamu"
+        "author": "Brumirage",
+        "link": "https://www.instagram.com/brumirage"
       },
       "pokemon": [
         {
@@ -94630,8 +94630,8 @@
       "speciality": "psychic",
       "img": {
         "src": "/leaders/swsh-avery",
-        "author": "Drawnamu",
-        "link": "https://www.deviantart.com/drawnamu"
+        "author": "Brumirage",
+        "link": "https://www.instagram.com/brumirage"
       },
       "pokemon": [
         {
@@ -94896,8 +94896,8 @@
       "speciality": "fighting",
       "img": {
         "src": "/leaders/swsh-bea",
-        "author": "Drawnamu",
-        "link": "https://www.deviantart.com/drawnamu"
+        "author": "Brumirage",
+        "link": "https://www.instagram.com/brumirage"
       },
       "pokemon": [
         {
@@ -95163,9 +95163,9 @@
       "name": "Marnie",
       "speciality": "dark",
       "img": {
-        "src": "/leaders/swsh-marnie-2",
-        "author": "Drawnamu",
-        "link": "https://www.deviantart.com/drawnamu"
+        "src": "/leaders/swsh-marnie",
+        "author": "Brumirage",
+        "link": "https://www.instagram.com/brumirage"
       },
       "pokemon": [
         {
@@ -95355,9 +95355,9 @@
       "name": "Bede",
       "speciality": "psychic",
       "img": {
-        "src": "/leaders/swsh-bede-2",
-        "author": "Drawnamu",
-        "link": "https://www.deviantart.com/drawnamu"
+        "src": "/leaders/swsh-bede",
+        "author": "Brumirage",
+        "link": "https://www.instagram.com/brumirage"
       },
       "pokemon": [
         {
@@ -95423,8 +95423,8 @@
       "speciality": "water",
       "img": {
         "src": "/leaders/swsh-nessa",
-        "author": "Drawnamu",
-        "link": "https://www.deviantart.com/drawnamu"
+        "author": "Brumirage",
+        "link": "https://www.instagram.com/brumirage"
       },
       "pokemon": [
         {
@@ -95664,8 +95664,8 @@
       "speciality": "dragon",
       "img": {
         "src": "/leaders/swsh-raihan",
-        "author": "Drawnamu",
-        "link": "https://www.deviantart.com/drawnamu"
+        "author": "Brumirage",
+        "link": "https://www.instagram.com/brumirage"
       },
       "pokemon": [
         {
@@ -104142,6 +104142,11 @@
     },
     "ultra1a": {
       "name": "Dulse",
+      "img": {
+        "src": "/leaders/sm-dulse",
+        "author": "ZacWeavile",
+        "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+      },
       "pokemon": [
         {
           "name": "furfrou",
@@ -104161,6 +104166,11 @@
     },
     "ultra2a": {
       "name": "Dulse",
+      "img": {
+        "src": "/leaders/sm-dulse",
+        "author": "ZacWeavile",
+        "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+      },
       "pokemon": [
         {
           "name": "poipole",
@@ -104180,6 +104190,11 @@
     },
     "ultra3a": {
       "name": "Dulse",
+      "img": {
+        "src": "/leaders/sm-dulse",
+        "author": "ZacWeavile",
+        "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+      },
       "pokemon": [
         {
           "name": "poipole",
@@ -104199,6 +104214,11 @@
     },
     "ultra4a": {
       "name": "Dulse",
+      "img": {
+        "src": "/leaders/sm-dulse",
+        "author": "ZacWeavile",
+        "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+      },
       "pokemon": [
         {
           "name": "poipole",
@@ -104218,6 +104238,11 @@
     },
     "ultra1b": {
       "name": "Soliera",
+      "img": {
+        "src": "/leaders/sm-soliera",
+        "author": "ZacWeavile",
+        "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+      },
       "pokemon": [
         {
           "name": "furfrou",
@@ -104237,6 +104262,12 @@
     },
     "ultra2b": {
       "name": "Soliera",
+      "img": {
+        "src": "/leaders/sm-soliera",
+        "author": "ZacWeavile",
+        "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+      },
+
       "pokemon": [
         {
           "name": "poipole",
@@ -104256,6 +104287,12 @@
     },
     "ultra3b": {
       "name": "Soliera",
+      "img": {
+        "src": "/leaders/sm-soliera",
+        "author": "ZacWeavile",
+        "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+      },
+
       "pokemon": [
         {
           "name": "poipole",
@@ -104275,6 +104312,12 @@
     },
     "ultra4b": {
       "name": "Soliera",
+      "img": {
+        "src": "/leaders/sm-soliera",
+        "author": "ZacWeavile",
+        "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+      },
+
       "pokemon": [
         {
           "name": "poipole",
@@ -105929,8 +105972,8 @@
       "speciality": "",
       "img": {
         "src": "/leaders/xy-xerosic",
-        "author": "Muzyun",
-        "link": "https://www.deviantart.com/muzyun"
+        "author": "Gnomowladny",
+        "link": "https://www.deviantart.com/gnomowladny"
       },
       "pokemon": [
         {
@@ -106098,8 +106141,8 @@
       "speciality": "",
       "img": {
         "src": "/leaders/xy-lysandre-2",
-        "author": "Muzyun",
-        "link": "https://www.deviantart.com/muzyun"
+        "author": "kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
       },
       "pokemon": [
         {

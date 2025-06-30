@@ -2,7 +2,6 @@
 /leaders/blazevolt-brawly
 /leaders/blazevolt-caroll
 /leaders/blazevolt-elmer
-/leaders/blazevolt-ingo-emmet
 /leaders/blazevolt-juan
 /leaders/blazevolt-lenora-hawes
 /leaders/blazevolt-nate-rosa
@@ -12,17 +11,6 @@
 /leaders/blazevolt-tate-liza
 /leaders/blazevolt-wattson
 /leaders/blazevolt-winona
-/leaders/blwh-charles
-/leaders/blwh-elesa-2
-/leaders/blwh-ghetsis-2
-/leaders/blwh-iris-champion
-/leaders/blwh-marlon
-/leaders/blwh-marshal
-/leaders/blwh-rood
-/leaders/blwh-roxie
-/leaders/blwh-shadow
-/leaders/blwh-zinzolin
-/leaders/blwh-zinzolin-grunt
 /leaders/dp-cheryl
 /leaders/dp-dahlia
 /leaders/dp-darach

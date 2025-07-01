@@ -4,7 +4,11 @@ import { Expanded as Games } from '$lib/data/games.js'
 
 
 let pokemon = import.meta.glob(
-  '/node_modules/pokemon-sprites/sprites/pokemon/*.png'
+  '/node_modules/pokemon-sprites/sprites/pokemon/*.png',
+  {
+    query: '?url',
+    import: 'default'
+  }
 )
 
 
@@ -37,7 +41,7 @@ export async function GET({ params }) {
   return new Response('', {
     status: 301,
     headers: {
-      Location: sprite.default
+      Location: sprite
     }
   });
 }

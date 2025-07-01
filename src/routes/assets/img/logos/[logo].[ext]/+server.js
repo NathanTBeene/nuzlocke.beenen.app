@@ -5,7 +5,7 @@ const sizes = [
 ]
 
 let logos = import.meta.glob(
-  '../*.webp',
+  '../*.(webp|png)',
   {
     query: '?base64',
     import: 'default'
@@ -25,7 +25,7 @@ const keyToBase64 = async (spriteName) => {
 /* legacy stuff. sometimes the caller of the logo seems to not know the
  * logo key, but only the game id, so we resolve that here
  */
-const getLogoUrlFromGameId = (logo) => {
+const getLogoUrlFromGameId = (logo, ext) => {
   const logoSplit = logo.split('-');
   let size = '';
   let id = logo;
@@ -41,15 +41,15 @@ const getLogoUrlFromGameId = (logo) => {
 
   if(!resolvedLogoPath) return null;
 
-  return `${resolvedLogoPath}${size}.webp`
+  return `${resolvedLogoPath}${size}.${ext}`
 }
 
 export async function GET({ params }) {
-  const { logo } = params;
+  const { logo, ext } = params;
 
-  let location = `${logo}.webp`;
+  let location = `${logo}.${ext}`;
 
-  const legacyPath = getLogoUrlFromGameId(logo);
+  const legacyPath = getLogoUrlFromGameId(logo, ext);
 
   if(legacyPath) {
     location = legacyPath;
@@ -68,7 +68,7 @@ export async function GET({ params }) {
 
   return new Response(Buffer.from(sprite, 'base64'), {
     headers: {
-      'Content-Type': 'image/webp'
+      'Content-Type': `image/${ext}`
     }
   });
 }

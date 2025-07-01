@@ -1,13 +1,13 @@
 let leaders = import.meta.glob(
-  '../*.webp',
+  '../*.(webp|png)',
   {
     query: '?base64',
     import: 'default'
   }
 )
 
-const keyToBase64 = async (spriteName) => {
-  let path = `../${spriteName}.webp`;
+const keyToBase64 = async (spriteName, ext) => {
+  let path = `../${spriteName}.${ext}`;
 
   if(!leaders[path]) return false;
 
@@ -17,9 +17,9 @@ const keyToBase64 = async (spriteName) => {
 }
 
 export async function GET({ params }) {
-  const {leader} = params;
+  const {leader, ext} = params;
 
-  let sprite = await keyToBase64(leader)
+  let sprite = await keyToBase64(leader, ext)
 
   if (!sprite) {
     return new Response('', {
@@ -32,7 +32,7 @@ export async function GET({ params }) {
 
   return new Response(Buffer.from(sprite, 'base64'), {
     headers: {
-      'Content-Type': 'image/webp'
+      'Content-Type': `image/${ext}`
     }
   });
 }

@@ -2,7 +2,7 @@
   "newgen": {
     "pid": "newgen",
     "lid": "newgen",
-    "logo": "/logos/new-generations-logo",
+    "logo": "new-generations-logo",
     "title": "New Generations",
     "gen": "romhack",
     "supported": true,
@@ -14,7 +14,7 @@
   "blazingem": {
     "pid": "blazingem",
     "lid": "blazingem",
-    "logo": "/logos/blazing-emerald-logo",
+    "logo": "blazing-emerald-logo",
     "title": "Blazing Emerald",
     "gen": "romhack",
     "supported": true,
@@ -26,7 +26,7 @@
   "emrunbun": {
     "pid": "emrunbun",
     "lid": "emrunbun",
-    "logo": "/logos/runbun-logo",
+    "logo": "runbun-logo",
     "title": "Emerald Run & Bun",
     "gen": "romhack",
     "supported": true,
@@ -38,7 +38,7 @@
   "glazed": {
     "pid": "glazed",
     "lid": "glazed",
-    "logo": "/logos/glazed-logo",
+    "logo": "glazed-logo",
     "title": "Glazed",
     "gen": "romhack",
     "supported": true,
@@ -49,7 +49,7 @@
   },
   "rrss": {
     "pid": "rrss",
-    "logo": "/logos/rising-ruby-logo",
+    "logo": "rising-ruby-logo",
     "title": "Rising Ruby",
     "gen": "romhack",
     "supported": true,
@@ -61,7 +61,7 @@
   "ssaph": {
     "pid": "ssaph",
     "lid": "rrss",
-    "logo": "/logos/sinking-sapphire-logo",
+    "logo": "sinking-sapphire-logo",
     "title": "Sinking Sapphire",
     "gen": "romhack",
     "supported": true,
@@ -73,7 +73,7 @@
   "unbound": {
     "pid": "unbound",
     "lid": "unbound",
-    "logo": "/logos/unbound-logo",
+    "logo": "unbound-logo",
     "title": "Unbound",
     "gen": "romhack",
     "supported": true,
@@ -85,7 +85,7 @@
   },
   "emkaizo": {
     "pid": "emkaizo",
-    "logo": "/logos/emerald-kaizo-logo",
+    "logo": "emerald-kaizo-logo",
     "title": "Emerald Kaizo",
     "gen": "romhack",
     "supported": true,
@@ -101,7 +101,7 @@
   "vi": {
     "pid": "vi",
     "lid": "sv",
-    "logo": "/logos/violet-logo",
+    "logo": "violet-logo",
     "title": "Violet",
     "gen": "IX",
     "supported": true,
@@ -111,7 +111,7 @@
   "sc": {
     "pid": "sc",
     "lid": "sv",
-    "logo": "/logos/scarlet-logo",
+    "logo": "scarlet-logo",
     "title": "Scarlet",
     "gen": "IX",
     "supported": true,
@@ -121,7 +121,7 @@
   "sw": {
     "pid": "sw",
     "lid": "swsh",
-    "logo": "/logos/sword-logo",
+    "logo": "sword-logo",
     "title": "Sword",
     "gen": "VIII",
     "supported": true,
@@ -130,7 +130,7 @@
   "sh": {
     "pid": "sh",
     "lid": "swsh",
-    "logo": "/logos/shield-logo",
+    "logo": "shield-logo",
     "title": "Shield",
     "gen": "VIII",
     "supported": true,
@@ -139,7 +139,7 @@
   "usun": {
     "pid": "usun",
     "lid": "usum",
-    "logo": "/logos/ultra-sun-logo",
+    "logo": "ultra-sun-logo",
     "title": "Ultra Sun",
     "gen": "VII",
     "supported": true,
@@ -148,7 +148,7 @@
   "umoon": {
     "pid": "umoon",
     "lid": "usum",
-    "logo": "/logos/ultra-moon-logo",
+    "logo": "ultra-moon-logo",
     "title": "Ultra Moon",
     "gen": "VII",
     "supported": true,
@@ -157,7 +157,7 @@
   "sun": {
     "pid": "sun",
     "lid": "sm",
-    "logo": "/logos/sun-logo",
+    "logo": "sun-logo",
     "title": "Sun",
     "gen": "VII",
     "supported": true,
@@ -166,7 +166,7 @@
   "moon": {
     "pid": "moon",
     "lid": "sm",
-    "logo": "/logos/moon-logo",
+    "logo": "moon-logo",
     "title": "Moon",
     "gen": "VII",
     "supported": true,
@@ -175,7 +175,7 @@
   "x": {
     "pid": "x",
     "lid": "xy",
-    "logo": "/logos/x-logo",
+    "logo": "x-logo",
     "title": "X",
     "gen": "VI",
     "supported": true,
@@ -184,7 +184,7 @@
   "y": {
     "pid": "y",
     "lid": "xy",
-    "logo": "/logos/y-logo",
+    "logo": "y-logo",
     "title": "Y",
     "gen": "VI",
     "supported": true,
@@ -194,7 +194,7 @@
     "pid": "blazevolt2",
     "patchId": "blazevolt2",
     "lid": "blazevolt2",
-    "logo": "/logos/blaze-black-volt-white-2-redux",
+    "logo": "blaze-black-volt-white-2-redux",
     "title": "Blaze Black / Volt White 2 Redux",
     "gen": "romhack",
     "patched": true,
@@ -206,7 +206,7 @@
   "bl2": {
     "pid": "bl2",
     "lid": "b2w2",
-    "logo": "/logos/black-2-logo",
+    "logo": "black-2-logo",
     "title": "Black 2",
     "gen": "V",
     "supported": true,
@@ -220,7 +220,7 @@
   "wh2": {
     "pid": "wh2",
     "lid": "b2w2",
-    "logo": "/logos/white-2-logo",
+    "logo": "white-2-logo",
     "title": "White 2",
     "gen": "V",
     "supported": true,
@@ -235,7 +235,7 @@
     "pid": "blaze",
     "patchId": "blazevolt",
     "lid": "blazevolt",
-    "logo": "/logos/blaze-black-logo",
+    "logo": "blaze-black-logo",
     "title": "Blaze Black",
     "gen": "romhack",
     "patched": true,
@@ -247,7 +247,7 @@
     "pid": "volt",
     "patchId": "blazevolt",
     "lid": "blazevolt",
-    "logo": "/logos/volt-white-logo",
+    "logo": "volt-white-logo",
     "title": "Volt White",
     "gen": "romhack",
     "patched": true,
@@ -258,7 +258,7 @@
   "bl": {
     "pid": "bl",
     "lid": "bw",
-    "logo": "/logos/black-logo",
+    "logo": "black-logo",
     "title": "Black",
     "gen": "V",
     "supported": true,
@@ -271,7 +271,7 @@
   "wh": {
     "pid": "wh",
     "lid": "bw",
-    "logo": "/logos/white-logo",
+    "logo": "white-logo",
     "title": "White",
     "gen": "V",
     "supported": true,
@@ -284,7 +284,7 @@
   "bd": {
     "pid": "bd",
     "lid": "bdsp",
-    "logo": "/logos/brilliant-diamond-logo",
+    "logo": "brilliant-diamond-logo",
     "title": "Brilliant Diamond",
     "gen": "VIII",
     "supported": true,
@@ -293,7 +293,7 @@
   "sp": {
     "pid": "sp",
     "lid": "bdsp",
-    "logo": "/logos/shining-pearl-logo",
+    "logo": "shining-pearl-logo",
     "title": "Shining Pearl",
     "gen": "VIII",
     "supported": true,
@@ -302,7 +302,7 @@
   "radred": {
     "pid": "radred",
     "lid": "radred",
-    "logo": "/logos/radical-red-logo",
+    "logo": "radical-red-logo",
     "title": "Radical Red",
     "gen": "romhack",
     "supported": true,
@@ -314,7 +314,7 @@
   },
   "renplat": {
     "pid": "renplat",
-    "logo": "/logos/renegade-platinum-logo",
+    "logo": "renegade-platinum-logo",
     "title": "Renegade Platinum",
     "gen": "romhack",
     "supported": true,
@@ -324,7 +324,7 @@
   "pt": {
     "pid": "pt",
     "lid": "plat",
-    "logo": "/logos/platinum-logo",
+    "logo": "platinum-logo",
     "title": "Platinum",
     "gen": "IV",
     "supported": true,
@@ -337,7 +337,7 @@
   "d": {
     "pid": "d",
     "lid": "dp",
-    "logo": "/logos/diamond-logo",
+    "logo": "diamond-logo",
     "title": "Diamond",
     "gen": "IV",
     "supported": true,
@@ -350,7 +350,7 @@
   "p": {
     "pid": "p",
     "lid": "dp",
-    "logo": "/logos/pearl-logo",
+    "logo": "pearl-logo",
     "title": "Pearl",
     "gen": "IV",
     "supported": true,
@@ -363,7 +363,7 @@
   "or": {
     "pid": "or",
     "lid": "oras",
-    "logo": "/logos/omega-ruby-logo",
+    "logo": "omega-ruby-logo",
     "title": "Omega Ruby",
     "gen": "VI",
     "supported": true,
@@ -372,7 +372,7 @@
   "as": {
     "pid": "as",
     "lid": "oras",
-    "logo": "/logos/alpha-sapphire-logo",
+    "logo": "alpha-sapphire-logo",
     "title": "Alpha Sapphire",
     "gen": "VI",
     "supported": true,
@@ -380,7 +380,7 @@
   },
   "em": {
     "pid": "em",
-    "logo": "/logos/emerald-logo",
+    "logo": "emerald-logo",
     "title": "Emerald",
     "gen": "III",
     "supported": true,
@@ -394,7 +394,7 @@
 
   "incem": {
     "pid": "incem",
-    "logo": "/logos/inclement-emerald-logo",
+    "logo": "inclement-emerald-logo",
     "title": "Inclement Emerald",
     "gen": "romhack",
     "supported": true,
@@ -404,7 +404,7 @@
   "ruby": {
     "pid": "ruby",
     "lid": "rs",
-    "logo": "/logos/ruby-logo",
+    "logo": "ruby-logo",
     "title": "Ruby",
     "gen": "III",
     "supported": true,
@@ -418,7 +418,7 @@
   "saph": {
     "pid": "saph",
     "lid": "rs",
-    "logo": "/logos/sapphire-logo",
+    "logo": "sapphire-logo",
     "title": "Sapphire",
     "gen": "III",
     "supported": true,
@@ -432,7 +432,7 @@
   "stormsilv": {
     "pid": "stormsilv",
     "lid": "sssg",
-    "logo": "/logos/storm-silver-logo",
+    "logo": "storm-silver-logo",
     "title": "Storm Silver",
     "patched": true,
     "patchId": "sssg",
@@ -443,7 +443,7 @@
   "sacredgold": {
     "pid": "sacredgold",
     "lid": "sssg",
-    "logo": "/logos/sacred-gold-logo",
+    "logo": "sacred-gold-logo",
     "title": "Sacred Gold",
     "patched": true,
     "patchId": "sssg",
@@ -454,7 +454,7 @@
   "hg": {
     "pid": "hg",
     "lid": "hgss",
-    "logo": "/logos/heart-gold-logo",
+    "logo": "heart-gold-logo",
     "title": "Heart Gold",
     "gen": "IV",
     "supported": true,
@@ -467,7 +467,7 @@
   "ss": {
     "pid": "ss",
     "lid": "hgss",
-    "logo": "/logos/soul-silver-logo",
+    "logo": "soul-silver-logo",
     "title": "Soul Silver",
     "gen": "IV",
     "supported": true,
@@ -480,7 +480,7 @@
   "gold": {
     "pid": "gold",
     "lid": "gsc",
-    "logo": "/logos/gold-logo",
+    "logo": "gold-logo",
     "title": "Gold",
     "gen": "II",
     "supported": true,
@@ -494,7 +494,7 @@
   "silv": {
     "pid": "silv",
     "lid": "gsc",
-    "logo": "/logos/silver-logo",
+    "logo": "silver-logo",
     "title": "Silver",
     "gen": "II",
     "supported": true,
@@ -508,7 +508,7 @@
   "crys": {
     "pid": "crys",
     "lid": "gsc",
-    "logo": "/logos/crystal-logo",
+    "logo": "crystal-logo",
     "title": "Crystal",
     "gen": "II",
     "supported": true,
@@ -522,7 +522,7 @@
   "fr": {
     "pid": "fr",
     "lid": "frlg",
-    "logo": "/logos/fire-red-logo",
+    "logo": "fire-red-logo",
     "title": "Fire Red",
     "gen": "III",
     "supported": true,
@@ -536,7 +536,7 @@
   "lg": {
     "pid": "lg",
     "lid": "frlg",
-    "logo": "/logos/leaf-green-logo",
+    "logo": "leaf-green-logo",
     "title": "Leaf Green",
     "gen": "III",
     "supported": true,
@@ -552,7 +552,7 @@
     "title": "Yellow",
     "gen": "I",
     "supported": true,
-    "logo": "/logos/yellow-logo",
+    "logo": "yellow-logo",
     "region": "kanto",
     "filter": {
       "types": "pregen2",
@@ -566,7 +566,7 @@
     "title": "Red",
     "gen": "I",
     "supported": true,
-    "logo": "/logos/red-logo",
+    "logo": "red-logo",
     "region": "kanto",
     "filter": {
       "types": "pregen2",
@@ -580,7 +580,7 @@
     "title": "Blue",
     "gen": "I",
     "supported": true,
-    "logo": "/logos/blue-logo",
+    "logo": "blue-logo",
     "region": "kanto",
     "filter": {
       "types": "pregen2",

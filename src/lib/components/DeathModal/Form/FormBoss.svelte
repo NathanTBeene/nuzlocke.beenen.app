@@ -54,6 +54,19 @@
     resetattack()
   }
 
+  const bossImage = (data) => {
+    let img = typeof data.img === 'string' ? { src: data.img } : data.img
+
+    if(img.src.startsWith('/leaders/')) {
+      img.src = `/assets/img${img.src}`;
+    }
+    if(img.src.startsWith('/sprite/')) {
+      img.src = `/assets/img/pokemon/base-${img.src.slice(8)}`;
+    }
+
+    return img;
+  }
+
   // Chang detection between the opponent selection & trainer
   let prevTrainer
   $: {
@@ -107,8 +120,7 @@
 
     {#if league && (league[item.value].img?.src || league[item.value].img)}
       <Picture
-        src="https://img.nuzlocke.app{league[item.value].img?.src ||
-          league[item.value].img}"
+        src={bossImage(league[item.value]).src}
         alt={item.name}
         pixelated
         className="w-16 md:w-18 translate-x-1/4 float-right"

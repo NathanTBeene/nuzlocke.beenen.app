@@ -8612,6 +8612,11 @@
   },
   "ultra1b": {
     "name": "Soliera",
+    "img": {
+      "src": "/leaders/sm-soliera",
+      "author": "ZacWeavile",
+      "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+    },
     "pokemon": [
       {
         "name": "furfrou",
@@ -8665,6 +8670,11 @@
   },
   "ultra2b": {
     "name": "Soliera",
+    "img": {
+      "src": "/leaders/sm-soliera",
+      "author": "ZacWeavile",
+      "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+    },
     "pokemon": [
       {
         "name": "poipole",
@@ -8719,6 +8729,11 @@
   },
   "ultra3b": {
     "name": "Soliera",
+    "img": {
+      "src": "/leaders/sm-soliera",
+      "author": "ZacWeavile",
+      "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+    },
     "pokemon": [
       {
         "name": "poipole",
@@ -8772,6 +8787,11 @@
   },
   "ultra4b": {
     "name": "Soliera",
+    "img": {
+      "src": "/leaders/sm-soliera",
+      "author": "ZacWeavile",
+      "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+    },
     "pokemon": [
       {
         "name": "poipole",

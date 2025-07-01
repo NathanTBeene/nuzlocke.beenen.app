@@ -4,9 +4,9 @@ const rewrite = !building && !dev
 // TODO: Remember to update `vercel.json` in root of project when
 // modifying these sources
 
-export const SPRITE = 'https://img.nuzlocke.app/sprites'
+export const SPRITE = '/assets/img/pokemon'
 export const CUSTOM = 'https://img.nuzlocke.app/sprites'
-export const IMG = 'https://img.nuzlocke.app'
+export const IMG = '/assets/img'
 export const SHARE = 'https://share.nuzlocke.app'
 
 export const DATA = rewrite ? '/api' : '/api' // Load locally for development
@@ -31,6 +31,21 @@ export const createImgUrl = (p, { ext = 'webp', shiny = false } = {}) => {
 
   if (!normalId) return UNOWN
 
-  if (shiny) return `${SPRITE}/shiny/${normalId}.${ext}`
-  return `${SPRITE}/base/${normalId}.${ext}`
+  if (shiny) return `${SPRITE}/shiny-${normalId}.${ext}`
+  return `${SPRITE}/base-${normalId}.${ext}`
+}
+
+export const bossToImage = (bossData) => {
+  let img = null;
+  if(typeof bossData.img !== 'undefined') {
+    img = typeof bossData.img === 'string' ? { src: bossData.img } : bossData.img
+
+    if(img.src.startsWith('/leaders/')) {
+      img.src = `/assets/img${img.src}`;
+    }
+    if(img.src.startsWith('/sprite/')) {
+      img.src = `/assets/img/pokemon/base-${img.src.slice(8)}`;
+    }
+  }
+  return img;
 }

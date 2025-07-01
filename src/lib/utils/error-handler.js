@@ -8,7 +8,7 @@ export default function createErrorHandlerModal() {
   const cConfirm = document.createElement('button')
 
   cHeading.innerHTML = "Oh no! Something's gone wrong"
-  cImage.src = 'https://img.nuzlocke.app/sprite/202.png'
+  cImage.src = '/assets/img/pokemon/base-202.png'
   cImage.width = 92
   cImage.height = 92
   cCopy.innerHTML =

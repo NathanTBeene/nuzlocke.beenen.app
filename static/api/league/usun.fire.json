@@ -8605,6 +8605,11 @@
   },
   "ultra1a": {
     "name": "Dulse",
+    "img": {
+      "src": "/leaders/sm-dulse",
+      "author": "ZacWeavile",
+      "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+    },
     "pokemon": [
       {
         "name": "furfrou",
@@ -8658,6 +8663,11 @@
   },
   "ultra2a": {
     "name": "Dulse",
+    "img": {
+      "src": "/leaders/sm-dulse",
+      "author": "ZacWeavile",
+      "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+    },
     "pokemon": [
       {
         "name": "poipole",
@@ -8712,6 +8722,11 @@
   },
   "ultra3a": {
     "name": "Dulse",
+    "img": {
+      "src": "/leaders/sm-dulse",
+      "author": "ZacWeavile",
+      "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+    },
     "pokemon": [
       {
         "name": "poipole",
@@ -8765,6 +8780,11 @@
   },
   "ultra4a": {
     "name": "Dulse",
+    "img": {
+      "src": "/leaders/sm-dulse",
+      "author": "ZacWeavile",
+      "link": "https://www.smogon.com/forums/members/zacweavile.522483/"
+    },
     "pokemon": [
       {
         "name": "poipole",

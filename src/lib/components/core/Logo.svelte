@@ -1,32 +1,33 @@
 <script>
-  export let src, alt = '', aspect = '4x4', pixelated = false, role = '', loading = 'lazy', pictureClass = ''
+  export let logo, alt = '', aspect = '4x4', pixelated = false, role = '', pictureClass = ''
   import { fade } from 'svelte/transition'
 
   const [width, height] = aspect.split('x')
 </script>
 
 <picture in:fade class={pictureClass || ''}>
-  <source media="(min-width: 800px)" srcset='{src}@2.webp 1x' type='image/webp' />
-  {#if loading === 'eager'}
-    <source srcset='{src}@2.webp x2' type='image/webp' />
-    <source srcset='{src}@1.webp x1' type='image/webp' />
-  {:else}
-    <source srcset='{src}@1.webp' type='image/webp' />
-  {/if}
+  <source media="(min-width: 640)"
+          srcset='/assets/img/logos/{logo}-small.webp 2x'
+          type='image/webp' />
+  <source media="(min-width: 640)"
+          srcset='/assets/img/logos/{logo}-small.png 2x'
+          type='image/png' />
+  <source srcset='/assets/img/logos/{logo}-small.webp'
+          type='image/webp' />
+
 
   <img class={$$restProps.class || ''}
        decoding=aysnc
 
        class:pixelated={pixelated}
-       src='{src}.png'
-       {loading}
+       src='/assets/img/logos/{logo}-small.png'
+       loading="lazy"
        {width}
        {height}
        {alt}
        {role}
-       srcset="{src}@1.png 300w, {src}@2.png 600w"
-       onerror='this.onerror = null; this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src'
-       />
+       type="image/png"
+     />
 </picture>
 
 <style lang="postcss">

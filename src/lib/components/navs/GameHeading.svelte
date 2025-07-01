@@ -72,7 +72,7 @@
       <a href="/" rel="external" class="{$$restProps.class || ''} home group">
         {#if game?.game}
           <Logo
-            src="/assets/{game?.game}"
+            logo="{game?.game}"
             pictureClass="game--{game?.game}"
             class="h-10 w-auto max-md:pt-2 sm:w-20 md:mr-4 md:h-auto"
             alt="{game?.game} logo"
@@ -135,7 +135,7 @@
                   {game.name}
                   <Logo
                     alt="{game.name} logo"
-                    src="/assets/{game.game}"
+                    logo="{game?.game}"
                     class="ml-2 w-16"
                     aspect="192x96"
                   />

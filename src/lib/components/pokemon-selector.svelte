@@ -48,6 +48,7 @@
 
   export let encounters = []
   let encounterItems = []
+
   const encounterF = (_) =>
     getPkmns(encounters).then((e) =>
       (encounters || []).map((id) => e[id]).filter((i) => i)

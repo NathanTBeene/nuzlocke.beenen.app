@@ -23,7 +23,7 @@
     info
 
   import { browser } from '$app/environment'
-  import { onMount, getContext } from 'svelte'
+  import { getContext } from 'svelte'
   import { fade } from 'svelte/transition'
 
   import Pokemon from '$lib/components/pokemon-card.svelte'
@@ -38,6 +38,7 @@
 
   import { Loop as Badge, Ball, Info } from '$icons'
   import { Vs } from '$lib/components/BossBattle'
+  import { bossToImage } from '$utils/rewrites'
 
   import Effect from '$lib/components/Effect.svelte'
 
@@ -66,7 +67,7 @@
       const league = await getLeague(game, starter)
       const data = league[id]
 
-      img = typeof data.img === 'string' ? { src: data.img } : data.img
+      img = bossToImage(data);
 
       pokemon = data.pokemon
       name = data.name
@@ -130,7 +131,7 @@
       {#if img}
         <span class="relative -mx-5" class:grayscale={defeated}>
           <Picture
-            src="https://img.nuzlocke.app/{img.src}"
+            src="{img.src}"
             alt={name}
             pixelated
             className="w-18 md:w-36"

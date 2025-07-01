@@ -123,7 +123,7 @@
       >
         {#if Games[i].logo}
           <Logo
-            src="{IMG}{Games[i].logo}"
+            logo="{Games[i].logo}"
             alt={Games[i].title + ' logo'}
             class="mr-2 w-12"
             role="presentation"
@@ -196,7 +196,7 @@
           class:text-yellow-500={selected === id}
         >
           <Logo
-            src="{IMG}{game.logo}"
+            logo="{game.logo}"
             aspect="192x96"
             role="presentation"
             alt={'Pokémon ' + game.title + ' logo'}

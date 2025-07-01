@@ -115,7 +115,9 @@
 
     border-radius: 0;
 
-    background-image: url('https://img.nuzlocke.app/assets/crystal.webp');
+    /* this file is MIA, no idea what is looked like */
+    /* background-image: url('https://img.nuzlocke.app/assets/crystal.webp'); */
+
     background-size: cover;
     background-position: center;
     background-blend-mode: luminosity;

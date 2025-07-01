@@ -63,7 +63,6 @@
 </script>
 
 <svelte:head>
-  <link rel="preload" as="image" href="https://img.nuzlocke.app/assets/pokemon-v6.png" />
   <link rel="preload" as="image" href="/logo.webp" />
   <link rel="preload" as="image" href="/logo.png" />
 </svelte:head>
@@ -103,7 +102,7 @@
               >
                 <Logo
                   loading="eager"
-                  src="{IMG}{Games[active.game].logo}"
+                  logo="{Games[active.game].logo}"
                   alt="{active.game} logo"
                   pictureClass="game--{active.game}"
                   class="ml-2 inline"

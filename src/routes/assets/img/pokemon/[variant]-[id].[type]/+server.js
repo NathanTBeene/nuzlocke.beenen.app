@@ -1,8 +1,3 @@
-
-
-import { Expanded as Games } from '$lib/data/games.js'
-
-
 let pokemon = import.meta.glob(
   '/node_modules/pokemon-sprites/sprites/pokemon/*.png',
   {
@@ -11,7 +6,7 @@ let pokemon = import.meta.glob(
   }
 )
 
-const spriteToPath = async (spriteName) => {
+const keyToBase64 = async (spriteName) => {
   let path = `/node_modules/pokemon-sprites/sprites/pokemon/${spriteName}`;
 
   let test = await pokemon[path]();
@@ -19,7 +14,6 @@ const spriteToPath = async (spriteName) => {
   return test;
 }
 
-import fs from 'fs';
 export async function GET({ params }) {
 
   const {id, variant} = params;
@@ -35,7 +29,7 @@ export async function GET({ params }) {
       spriteName = `${id}.png`;
   }
 
-  const sprite = await spriteToPath(spriteName);
+  const sprite = await keyToBase64(spriteName);
 
   return new Response(Buffer.from(sprite, 'base64'), {
     headers: {

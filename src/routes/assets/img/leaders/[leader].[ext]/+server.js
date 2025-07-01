@@ -1,27 +1,39 @@
-import { Expanded as Games } from '$lib/data/games.js'
+let leaders = import.meta.glob(
+  '../*.webp',
+  {
+    query: '?base64',
+    import: 'default'
+  }
+)
 
-const spritesPath = `./src/routes/assets/img/leaders`;
+const keyToBase64 = async (spriteName) => {
+  let path = `../${spriteName}.webp`;
 
-import fs from 'fs';
+  if(!leaders[path]) return false;
+
+  let test = await leaders[path]();
+
+  return test;
+}
 
 export async function GET({ params }) {
-  const {leader, ext} = params;
+  const {leader} = params;
 
-  let buffer = null;
+  let sprite = await keyToBase64(leader)
 
-  if(fs.existsSync(`${spritesPath}/${leader}.webp`)) {
-    buffer = fs.readFileSync(`${spritesPath}/${leader}.webp`)
-  } else if(fs.existsSync(`${spritesPath}/${leader}.png`)) {
-    buffer = fs.readFileSync(`${spritesPath}/${leader}.png`)
+  if (!sprite) {
+    return new Response('', {
+      status: 301,
+      headers: {
+        Location: '/assets/img/pokemon/base-201-question.png'
+      }
+    });
   }
 
+  return new Response(Buffer.from(sprite, 'base64'), {
+    headers: {
+      'Content-Type': 'image/webp'
+    }
+  });
 
-
-  if (!buffer) {
-    const spritesPath = `./node_modules/pokemon-sprites/sprites/pokemon`;
-    const spriteName = `201-question.png`;
-    buffer = fs.readFileSync(`${spritesPath}/${spriteName}`);
-  }
-
-  return new Response(buffer);
 }

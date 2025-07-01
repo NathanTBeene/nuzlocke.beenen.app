@@ -1,11 +1,26 @@
 import { Expanded as Games } from '$lib/data/games.js'
-import fs from 'fs'
-
-const spritesPath = `./src/routes/assets/img/logos`;
 
 const sizes = [
   'small'
 ]
+
+let logos = import.meta.glob(
+  '../*.webp',
+  {
+    query: '?base64',
+    import: 'default'
+  }
+)
+
+const keyToBase64 = async (spriteName) => {
+  let path = `../${spriteName}`;
+
+  if(!logos[path]) return false;
+
+  let test = await logos[path]();
+
+  return test;
+}
 
 /* legacy stuff. sometimes the caller of the logo seems to not know the
  * logo key, but only the game id, so we resolve that here
@@ -40,13 +55,20 @@ export async function GET({ params }) {
     location = legacyPath;
   }
 
-  let buffer = null;
+  let sprite = await keyToBase64(location)
 
-  if(fs.existsSync(`${spritesPath}/${location}`)) {
-    buffer = fs.readFileSync(`${spritesPath}/${location}`)
+  if (!sprite) {
+    return new Response('', {
+      status: 303,
+      headers: {
+        Location: '/assets/img/pokemon/base-201-question.png'
+      }
+    });
   }
 
-  if (!buffer) return new Response('', { status: 404 });
-
-  return new Response(buffer);
+  return new Response(Buffer.from(sprite, 'base64'), {
+    headers: {
+      'Content-Type': 'image/webp'
+    }
+  });
 }

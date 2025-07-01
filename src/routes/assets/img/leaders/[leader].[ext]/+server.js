@@ -23,7 +23,7 @@ export async function GET({ params }) {
 
   if (!sprite) {
     return new Response('', {
-      status: 301,
+      status: 303,
       headers: {
         Location: '/assets/img/pokemon/base-201-question.png'
       }
@@ -35,5 +35,4 @@ export async function GET({ params }) {
       'Content-Type': 'image/webp'
     }
   });
-
 }

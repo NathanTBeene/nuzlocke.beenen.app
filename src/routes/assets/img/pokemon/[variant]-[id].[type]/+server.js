@@ -6,11 +6,10 @@ import { Expanded as Games } from '$lib/data/games.js'
 let pokemon = import.meta.glob(
   '/node_modules/pokemon-sprites/sprites/pokemon/*.png',
   {
-    query: '?url',
+    query: '?base64',
     import: 'default'
   }
 )
-
 
 const spriteToPath = async (spriteName) => {
   let path = `/node_modules/pokemon-sprites/sprites/pokemon/${spriteName}`;
@@ -38,10 +37,9 @@ export async function GET({ params }) {
 
   const sprite = await spriteToPath(spriteName);
 
-  return new Response('', {
-    status: 301,
+  return new Response(Buffer.from(sprite, 'base64'), {
     headers: {
-      Location: sprite
+      'Content-Type': 'image/png'
     }
   });
 }

@@ -1,6 +1,7 @@
 <script>
   import { fade } from 'svelte/transition'
   import { IMG } from '$utils/rewrites'
+
 </script>
 
 <div class='pointer-events-none fixed md:overflow-hidden inset-0 fog'>
@@ -8,22 +9,22 @@
     <span in:fade={{ duration: 1800, delay: 550 }}>
       <div class='absolute top-0 bottom-0 animate flex overflow-hidden'>
         <picture class='h-full translate-y-1/3 w-1/2'>
-          <source srcset="{IMG}/graves/fog@2.webp" media="(min-width: 620px)" type="image/webp" />
-          <source srcset="{IMG}/graves/fog@1.webp" type="image/webp" />
+          <source srcset="/img/fog@2.webp" media="(min-width: 620px)" type="image/webp" />
+          <source srcset="/img/fog@1.webp" type="image/webp" />
           <img
             alt="Background fog to give aesthetic of graveyard"
-            src="{IMG}/graves/fog@1.png"
-            srcset="{IMG}/graves/fog@1.png 1x, {IMG}/graves/fog@2.png 2x"
+            src="/img/fog@1.png"
+            srcset="/img/fog@1.png 1x, /img/fog@2.png 2x"
             decoding=async loading=lazy
             />
         </picture>
         <picture class='h-full translate-y-1/3 w-1/2'>
-          <source srcset="{IMG}/graves/fog@2.webp" media="(min-width: 620px)" type="image/webp" />
-          <source srcset="{IMG}/graves/fog@1.webp" type="image/webp" />
+          <source srcset="/img/fog@2.webp" media="(min-width: 620px)" type="image/webp" />
+          <source srcset="/img/fog@1.webp" type="image/webp" />
           <img
             alt="Background fog to give aesthetic of graveyard"
-            src="{IMG}/graves/fog@1.png"
-            srcset="{IMG}/graves/fog@1.png 1x, {IMG}/graves/fog@2.png 2x"
+            src="/img/fog@1.png"
+            srcset="/img/fog@1.png 1x, /img/fog@2.png 2x"
             decoding=async loading=lazy
             />
         </picture>
@@ -33,22 +34,22 @@
     <span in:fade={{ duration: 2250, delay: 200 }}>
       <div class='absolute top-0 bottom-0 animate-slow flex overflow-hidden'>
         <picture class='h-full rotate-180 -translate-y-1/3 w-1/2'>
-          <source srcset="{IMG}/graves/fog@2.webp" media="(min-width: 620px)" type="image/webp" />
-          <source srcset="{IMG}/graves/fog@1.webp" type="image/webp" />
+          <source srcset="/img/fog@2.webp" media="(min-width: 620px)" type="image/webp" />
+          <source srcset="/img/fog@1.webp" type="image/webp" />
           <img
             alt="Background fog to give aesthetic of graveyard"
-            src="{IMG}/graves/fog@1.png"
-            srcset="{IMG}/graves/fog@1.png 1x, {IMG}/graves/fog@2.png 2x"
+            src="/img/fog@1.png"
+            srcset="/img/fog@1.png 1x, /img/fog@2.png 2x"
             decoding=async loading=lazy
             />
         </picture>
         <picture class='h-full rotate-180 -translate-y-1/3 w-1/2'>
-          <source srcset="{IMG}/graves/fog@2.webp" media="(min-width: 620px)" type="image/webp" />
-          <source srcset="{IMG}/graves/fog@1.webp" type="image/webp" />
+          <source srcset="/img/fog@2.webp" media="(min-width: 620px)" type="image/webp" />
+          <source srcset="/img/fog@1.webp" type="image/webp" />
           <img
             alt="Background fog to give aesthetic of graveyard"
-            src="{IMG}/graves/fog@1.png"
-            srcset="{IMG}/graves/fog@1.png 1x, {IMG}/graves/fog@2.png 2x"
+            src="/img/fog@1.png"
+            srcset="/img/fog@1.png 1x, /img/fog@2.png 2x"
             decoding=async loading=lazy
             />
         </picture>

@@ -26,6 +26,7 @@
   let gravehash = 0
   $: gravehash = death?.epitaph?.length || nickname?.length || pokemon?.length
   $: graveid = id + 1 || (gravehash % 12) + 1
+  $: graveid = graveid === 2 ? 1 : graveid
 
   let tooltip
   $: tooltip = format(death?.epitaph, {
@@ -52,7 +53,7 @@
       pixelated
       class="tombstone tombstone--{graveid}"
       alt="Tombstone for {nickname} the {pokemon}"
-      src="https://img.nuzlocke.app/graves/grave-{graveid}"
+      src="/img/grave-{graveid}"
       aspect="192x256"
     />
   {/key}

@@ -25,6 +25,7 @@
   import { NuzlockeStates } from '$lib/data/states'
   import { Bin, Download, Share } from '$icons'
   import { Icon, PIcon, IconButton, Logo as Picture } from '$c/core'
+  import { Logo } from '$lib/components/core/index.js'
 
   let ShareModal
   onMount((_) => {
@@ -88,10 +89,10 @@
     out:fade
     on:click={onclick}
   >
-    <Picture
-      alt="{name} logo"
-      src="/assets/{game}"
+    <Logo
+      logo="{game}"
       class="hidden h-16 w-32 sm:block"
+      alt="{game} logo"
       aspect="192x96"
     />
 

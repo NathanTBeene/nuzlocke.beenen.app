@@ -117,7 +117,7 @@
 
       {#if showAudio}<Audio
           class="bottom-8 left-0 z-[999999] lg:fixed"
-          src="{IMG}/audio/lavender.mp3"
+          src="/audio/lavender.mp3"
         />{/if}
       {#if showFog}<Fog />{/if}
     {/if}

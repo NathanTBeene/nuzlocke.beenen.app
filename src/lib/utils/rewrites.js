@@ -40,6 +40,8 @@ export const bossToImage = (bossData) => {
   if(typeof bossData.img !== 'undefined') {
     img = typeof bossData.img === 'string' ? { src: bossData.img } : bossData.img
 
+    if(!img) return img;
+
     if(img.src.startsWith('/leaders/')) {
       img.src = `/assets/img${img.src}`;
     }

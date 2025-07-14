@@ -1,6 +1,6 @@
 <script>
   export let type,
-    tera,
+    tera = '',
     className = ''
 
   if (tera) className = (className + ' tera').trim()

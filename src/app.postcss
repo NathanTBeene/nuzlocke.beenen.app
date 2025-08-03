@@ -140,14 +140,15 @@ img {
 }
 
 body {
-  @apply bg-transparent transition-colors dark:text-gray-200 dark:bg-gray-800 relative min-h-screen;
+  @apply relative min-h-screen bg-transparent transition-colors dark:bg-gray-800 dark:text-gray-200;
 }
 
 :global(.dark) body {
-  @apply text-gray-200 bg-gray-800;
+  @apply bg-gray-800 text-gray-200;
 }
 
-.greenscreen, .greenscreen.green {
+.greenscreen,
+.greenscreen.green {
   --gscreen: #09a43f;
 }
 
@@ -155,31 +156,41 @@ body {
   --gscreen: #0143b2;
 }
 
-.greenscreen body, .greenscreen nav, .greenscreen .modal-positioning {
-  background-color: var(--gscreen) !important; 
+.greenscreen body,
+.greenscreen nav,
+.greenscreen .modal-positioning {
+  background-color: var(--gscreen) !important;
 }
 
 .greenscreen nav::before {
   background: linear-gradient(var(--gscreen), 50%, transparent) !important;
 }
 
-.greenscreen .shadow-highlight, .greenscreen .dark\:shadow-highlight,
-.greenscreen .shadow-lg, .greenscreen .dark\:shadow-lg,
-.greenscreen .shadow-mark, .greenscreen .dark\:shadow-mark,
-.greenscreen .shadow-md, .greenscreen .dark\:shadow-md,
-.greenscreen .shadow-none, .greenscreen .dark\:shadow-none,
-.greenscreen .shadow-sm, .greenscreen .dark\:shadow-sm,
-.greenscreen .shadow-text, .greenscreen .dark\:shadow-text,
-.greenscreen .shadow-xl, .greenscreen .dark\:shadow-xl {
+.greenscreen .shadow-highlight,
+.greenscreen .dark\:shadow-highlight,
+.greenscreen .shadow-lg,
+.greenscreen .dark\:shadow-lg,
+.greenscreen .shadow-mark,
+.greenscreen .dark\:shadow-mark,
+.greenscreen .shadow-md,
+.greenscreen .dark\:shadow-md,
+.greenscreen .shadow-none,
+.greenscreen .dark\:shadow-none,
+.greenscreen .shadow-sm,
+.greenscreen .dark\:shadow-sm,
+.greenscreen .shadow-text,
+.greenscreen .dark\:shadow-text,
+.greenscreen .shadow-xl,
+.greenscreen .dark\:shadow-xl {
   box-shadow: none !important;
-} 
+}
 
 .g-container {
-  @apply max-w-6xl mx-auto px-4 md:px-12 overflow-x-hidden;
+  @apply mx-auto max-w-6xl overflow-x-hidden px-4 md:px-12;
 }
 
 .p-container {
-  @apply w-full md:w-11/12 px-4 md:px-12 xl:w-3/4 mx-auto flex justify-between;
+  @apply mx-auto flex w-full justify-between px-4 md:w-11/12 md:px-12 xl:w-3/4;
 }
 
 .window {
@@ -225,29 +236,33 @@ body {
 @keyframes shake {
   0%,
   50% {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(0);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(0);
   }
   5%,
   45% {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(-2deg);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(-2deg);
   }
   10%,
   40% {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(2deg);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(2deg);
   }
   15%,
   25%,
   35% {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(-5deg);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(-5deg);
   }
   20%,
   30% {
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(5deg);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(5deg);
   }
 }
 
 .pksymbol {
-display: inline-block;
+  display: inline-block;
 }
 
 .pksymbol-type-electric-32px {
@@ -353,33 +368,33 @@ svg.waves g.fill {
   justify-content: flex-start !important;
 }
 
-@media (min-width:640px) {
+@media (min-width: 640px) {
   .modal-positioning {
     justify-content: center !important;
   }
 }
 
 .error-modal {
-@apply bg-gray-100 text-gray-900 p-8 rounded-lg fixed top-1/2 left-1/2 pointer-events-auto;
-width: 340px;
-transform: translate(-50%, -50%);
+  @apply pointer-events-auto fixed top-1/2 left-1/2 rounded-lg bg-gray-100 p-8 text-gray-900;
+  width: 340px;
+  transform: translate(-50%, -50%);
 }
 
 .dark .error-modal {
-@apply bg-gray-800 text-gray-50;
+  @apply bg-gray-800 text-gray-50;
 }
 
 .error-modal h2 {
-@apply font-bold text-3xl leading-8 pb-3;
+  @apply pb-3 text-3xl font-bold leading-8;
 }
 
 .error-modal img {
-@apply -mt-20 scale-200 pb-3 mx-auto;
-image-rendering:pixelated;
+  @apply mx-auto -mt-20 scale-200 pb-3;
+  image-rendering: pixelated;
 }
 
 .error-modal button {
-@apply transition w-full mt-5 py-2 border-2 font-bold border-gray-900 rounded-lg;
+  @apply mt-5 w-full rounded-lg border-2 border-gray-900 py-2 font-bold transition;
 }
 
 .dark .error-modal button {
@@ -387,16 +402,50 @@ image-rendering:pixelated;
 }
 
 .error-modal button:hover {
-  @apply ring-2 ring-blue-400 border-blue-400 text-blue-600 bg-blue-100;
+  @apply border-blue-400 bg-blue-100 text-blue-600 ring-2 ring-blue-400;
 }
 
 .dark .error-modal button:hover {
-  @apply ring-2 ring-blue-600 border-blue-600 text-blue-500 bg-gray-900;
+  @apply border-blue-600 bg-gray-900 text-blue-500 ring-2 ring-blue-600;
 }
 
 .error-modal-container {
-@apply fixed inset-0 pointer-events-none;
-z-index: 99999999;
-background: rgba(0,0,0,0.5);
-backdrop-filter: blur(3px);
+  @apply pointer-events-none fixed inset-0;
+  z-index: 99999999;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+/* Custom scrollbar styles */
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.gray.400') theme('colors.gray.100');
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-gray-800;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-gray-400;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500;
+  }
+
+  .dark .scrollbar-thin {
+    scrollbar-color: theme('colors.gray.600') theme('colors.gray.800');
+  }
+}
+
+/* Apply globally to all scrollable elements */
+* {
+  @apply scrollbar-thin;
 }

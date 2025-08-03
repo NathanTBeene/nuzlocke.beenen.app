@@ -11,7 +11,7 @@
 </script>
 
 <div
-  class="sm:w-initial flex w-full flex-row gap-x-4 overflow-x-scroll {className}"
+  class="sm:w-initial flex w-full flex-row gap-x-4 overflow-x-auto {className}"
 >
   {#each tabs as tab, i}
     <label
